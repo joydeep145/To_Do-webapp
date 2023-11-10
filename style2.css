@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(50, 199, 204);
+    padding: 10px;
+}
+.ToDo{
+    width: 100%;
+    max-width: 560px;
+    margin: 100px auto 30px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.ToDo h1{
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    color: #7f16e2;
+}
+.ToDo img{
+    width: 40px;
+    margin-left: 10px;
+}
+.work{
+    display: flex;
+    align-items: center;
+    background: #edeef0;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 10px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUro2CbC8JBwWuwu3ywA4pnAn2Q54Gs0d0WQ&usqp=CAU);
+    top: 10px;
+    left: 8px;
+   
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;  
+}
+ul li.checked::before{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQte46IEngEaXKP_MvYO9quvPAx25RmheuTPQ&usqp=CAU)
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: black;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #d6d9dd;
+}
